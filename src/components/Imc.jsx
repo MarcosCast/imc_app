@@ -2,7 +2,9 @@ import './Imc.scss';
 
 function IMC() {
     return(
-        <IMC />
+        <div className="massa">
+            <h1>Indice de Massa Corporal</h1>
+        </div>
     );
 }
 
