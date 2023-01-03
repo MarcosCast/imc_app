@@ -5,11 +5,12 @@ import React, { useState } from "react";
 function IMC() {
     const {peso, setPeso} = useState(12);
     const {altura, setAltura} = useState(0); 
+    const {valor, setValor} = useState(0);
 
     const calculo = () => {
         const imc = peso / (altura * altura);
-        const formattedImc = imc.toFixed(2);
-        console.log(formattedImc);
+        const resImc = imc.toFixed(2);
+        setValor(+resImc);
     }
 
     return(
@@ -34,6 +35,8 @@ function IMC() {
             </div>
             <br />
             <button onClick={calculo}> Calcular </button>
+
+            <h1> {valor} </h1>
         </div>
     );
 }
