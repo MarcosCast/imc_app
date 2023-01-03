@@ -1,9 +1,13 @@
+
+
 import './Imc.scss';
+
+//import Logo from '../images/grafico.png'
 
 function IMC() {
     return(
         <div className="massa">
-            <h1>Indice de Massa Corporal</h1>
+            
             <div className="inputs">
                 <div className="altura">
                      Altura

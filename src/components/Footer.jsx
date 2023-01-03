@@ -1,4 +1,4 @@
-import './Footer.css';
+import './Footer.scss';
 
 import Github from '../images/github.png';
 import Linkedin from '../images/linkedin.png';

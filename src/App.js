@@ -1,11 +1,17 @@
+import React from 'react';
 import IMC from './components/Imc';
-//import Rodape from './components/Footer';
+import Rodape from './components/Footer';
 import './App.css';
+import Conteudo from './components/Conteúdo';
+//import Conteudo from './components/Conteúdo';
 
 function App() {
-  return (
-    <IMC />
-    //<Rodape />    
+  return (   
+    <React.Fragment>   
+       <Conteudo />
+       <IMC />
+       <Rodape />
+    </React.Fragment>
   );
 }
 
