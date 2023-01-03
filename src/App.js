@@ -1,8 +1,11 @@
 import React from 'react';
+
 import IMC from './components/Imc';
 import Rodape from './components/Footer';
-import './App.css';
 import Conteudo from './components/Conteúdo';
+
+import './App.css';
+
 
 function App() {
   return (   

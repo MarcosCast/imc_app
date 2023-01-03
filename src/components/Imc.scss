@@ -6,11 +6,47 @@
 }
 
 .inputs {
+   max-width: 1200px;
+   display: flex;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   justify-content: space-evenly;
+   width: 90%;
+   background: #FFC83D;
+   padding: 20px;
+   border-radius: 10px;
+   margin: 30px 10px 10px 10px;
+   box-shadow: 0 20px 60px 0 rgba(186,200,227,.1), 0 16px 36px 10px rgba(186,200,227,.3);
+
+   input {
+      display: block;
+      width: 100%;
+      outline: none !important;
+      margin-bottom: 10px;
+      font-weight: 200;
+      height: 20px;
+      margin-top: 30px;
+   }
+
    div {
       font-size: large;
    }
    span {
       font-size: 12px;
    }
+}
+
+button {
+   padding-left: 20px;
+   max-width: 1200px;
+   border: none;
+   background: #FFC83D;
+   color: #fff;
+   font-size: 1em;
+   font-weight: 200;
+   height: 50px;
+   cursor: pointer;
+   margin-top: 30px;
+   transition: all .3s ease;
+   border-radius: 2px;
+   width: 100%;
 }

@@ -14,7 +14,7 @@ function Conteudo() {
                 Importante: siga os exemplos e use pontos como separadores.</p>
             <figure>
               <img src={Logo} alt="Gráfico IMC" />
-              <figcaption>Informações da Figura</figcaption>
+              <figcaption>Gráfico sobre a classificação do peso</figcaption>
             </figure>
             
         </div>
