@@ -1,6 +1,6 @@
 import './Imc.scss';
 import React from "react";
-import ReactDOM from 'react-dom/client';
+//import ReactDOM from 'react-dom/client';
 //import Logo from '../images/grafico.png'
 
 function IMC() {
