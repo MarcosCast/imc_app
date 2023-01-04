@@ -16,19 +16,19 @@ function IMC() {
         var text = "";
 
         if (imc < 17) {
-            text= "Você está muito abaixo do peso! Valor: " + imc
+            text= "Você está muito abaixo do peso! IMC: " + imc
           } else if (imc < 18.49) {
-            text= "Você está abaixo do peso! Valor: " + imc
+            text= "Você está abaixo do peso! IMC: " + imc
           } else if (imc < 24.99) {
-            text="Você está com peso normal! Valor: " + imc
+            text="Você está com peso normal! IMC: " + imc
           } else if (imc < 29.9) {
-            text="Você está acima do peso! Valor: " + imc
+            text="Você está acima do peso! IMC: " + imc
           } else if (imc < 34.9) {
-            text="Você está com obesidade mórbida I! Valor: " + imc
+            text="Você está com obesidade mórbida I! IMC: " + imc
           }else if (imc < 39.9) {
-            text="Você está com obesidade mórbida II! Valor: " + imc
+            text="Você está com obesidade mórbida II! IMC: " + imc
           }else if (imc > 34.9) {
-            text="Você está com obesidade mórbida III! Valor: " + imc
+            text="Você está com obesidade mórbida III! IMC: " + imc
           }
           document.getElementById("text_area").innerText=text
         
