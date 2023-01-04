@@ -38,16 +38,16 @@ function IMC() {
         <div className="massa"> 
             <div className="inputs">
                 <div className="altura">
-                     Altura
-                    <span> ex.: 170 </span>
+                     Altura em metros
+                    <span><b> ex.: 170 </b></span>
                     <br />
                     <input type="number" id='altura' className="input_altura" 
                      /*onChange={(e) => setPeso(+e.target.value)}*/ placeholder="Altura"/>
                 </div>
                 <br />
                 <div className="peso">
-                     Quilos
-                    <span> ex.: 75,2 </span>
+                     Peso em Quilos
+                    <span><b> ex.: 75,2 </b></span>
                     <br />
                     <input type="number" id='peso' className="input_peso"
                      /*onChange={(e) => setAltura(+e.target.value)}*/ placeholder="Peso"/>
