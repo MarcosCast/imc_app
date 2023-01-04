@@ -1,42 +1,61 @@
 import './Imc.scss';
-import React, { useState } from "react";
+import React from "react";
+import ReactDOM from 'react-dom/client';
 //import Logo from '../images/grafico.png'
 
 function IMC() {
-    const {peso, setPeso} = useState(12);
-    const {altura, setAltura} = useState(0); 
-    const {valor, setValor} = useState(0);
+   // const [peso] = useState(0);
+   // const [altura] = useState(0); 
 
-    const calculo = () => {
-        const imc = peso / (altura * altura);
-        const resImc = imc.toFixed(2);
-        setValor(+resImc);
+    function calculo() {
+        var altura = document.getElementById("altura").value / 100;
+        var peso = document.getElementById("peso").value;
+
+        var imc = peso / (altura * altura);
+
+        var text = "";
+
+        if (imc < 17) {
+            text= "Você está muito abaixo do peso! " + imc
+          } else if (imc < 18.49) {
+            text= "Você está abaixo do peso! " + imc
+          } else if (imc < 24.99) {
+            text="Você está com peso normal! " + imc
+          } else if (imc < 29.9) {
+            text="Você está acima do peso! " + imc
+          } else if (imc < 34.9) {
+            text="Você está com obesidade mórbida I! " + imc
+          }else if (imc < 39.9) {
+            text="Você está com obesidade mórbida II! " + imc
+          }else if (imc > 34.9) {
+            text="Você está com obesidade mórbida III! " + imc
+          }
+          document.getElementById("text_area").innerText=text
+        
     }
 
     return(
-        <div className="massa">
-            
+        <div className="massa"> 
             <div className="inputs">
                 <div className="altura">
                      Altura
-                    <span> ex.: 1,70 </span>
+                    <span> ex.: 170 </span>
                     <br />
-                    <input type="number" value={peso} className="input_altura" 
-                     onChange={(e) => setPeso(+e.target.value)} placeholder="Altura"/>
+                    <input type="number" id='altura' className="input_altura" 
+                     /*onChange={(e) => setPeso(+e.target.value)}*/ placeholder="Altura"/>
                 </div>
                 <br />
                 <div className="peso">
                      Quilos
                     <span> ex.: 75,2 </span>
                     <br />
-                    <input type="number" value={altura} className="input_peso"
-                     onChange={(e) => setAltura(+e.target.value)} placeholder="Peso"/>
+                    <input type="number" id='peso' className="input_peso"
+                     /*onChange={(e) => setAltura(+e.target.value)}*/ placeholder="Peso"/>
                 </div>
             </div>
             <br />
-            <button onClick={calculo}> Calcular </button>
-
-            <h1> {valor} </h1>
+            <button type="button" onClick={calculo}> Calcular </button>
+            <textarea name="" id="text_area" rows="8"></textarea>
         </div>
     );
 }
