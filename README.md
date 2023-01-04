@@ -13,7 +13,7 @@ A parte responsiva do projeto está funcional na maioria dos aparelhos
 A parte mais complicada foi na aplicação da função, pois queria algo mais robusto, porém o mais simples ficou mais funcional.
 
 # Aprendizados
-Desenvolver melhor meu React e JS e o meu SCSS
+Desenvolver melhor meu React.JS e o meu SCSS
 
 # Apresentação Vídeo
 
