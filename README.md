@@ -27,7 +27,7 @@ https://imc-app-tau.vercel.app/
 
 ## 🛠️ Tecnologias utilizadas no desenvolvimento
 
-* React - Framework JavaScript
+* React - Biblioteca JavaScript
 * SCSS - Syntactically Awesome Style Sheets
 * npm - Gerenciador de pacode Node.JS
 
